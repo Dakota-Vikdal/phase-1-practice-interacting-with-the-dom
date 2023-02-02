@@ -39,3 +39,13 @@ document.addEventListener("submit",
 })
 
 let timerStart = setInterval(plusButton, 1000)
+
+const heart = document.querySelector("#heart")
+
+heart.addEventListener("click", () =>  {
+    const notification = document.createElement("li")
+    const ul = document.querySelector(".likes")
+     ul.append(notification)
+     let timerValue = parseInt(timer.textContent)
+     notification.textContent = `${timerValue}, has been liked`
+})
