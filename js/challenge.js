@@ -38,4 +38,4 @@ document.addEventListener("submit",
     li.textContent = (input.value)
 })
 
-document.addEventListener("DOMContentLoaded", setInterval(plusButton, 1000))
+let timerStart = setInterval(plusButton, 1000)
