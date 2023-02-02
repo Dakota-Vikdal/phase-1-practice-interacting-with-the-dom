@@ -14,8 +14,34 @@ plus.addEventListener("click", () => {
     plusButton();
 })
 
+minus.addEventListener("click", () => {
+    minusButton();
+})
+
 function plusButton () {
     let timerValue = parseInt(timer.textContent)
-    console.log("timer", timerValue)
     timer.textContent = ++timerValue;    
 };
+
+function minusButton () {
+    let timerValue = parseInt(timer.textContent)
+    timer.textContent = --timerValue;    
+};
+
+const input = document.querySelector("#comment-input")
+
+const ul = document.createElement("ul")
+
+const comLocation = document.querySelector("#list")
+
+comLocation.append(ul)
+
+document.addEventListener("submit",
+(e) => { e.preventDefault()
+    const li = document.createElement("li")
+    ul.append(li)  
+    li.textContent = (input.value)
+})
+
+
+
