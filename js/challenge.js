@@ -1,14 +1,9 @@
-//const variable = [1,2,3];
-
 const plus = document.querySelector("#plus")
-//console.log(plus)
 
 const minus = document.querySelector("#minus")
 
 
 const timer = document.querySelector("#counter")
-//timer.textContent = 55641
-//console.log(timer.textContent)
 
 plus.addEventListener("click", () => {
     plusButton();
@@ -43,5 +38,4 @@ document.addEventListener("submit",
     li.textContent = (input.value)
 })
 
-
-
+document.addEventListener("DOMContentLoaded", setInterval(plusButton, 1000))
